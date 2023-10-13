@@ -6,8 +6,62 @@
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="container">
+        <div class="nav">
+            <nav>
+                <div class="logo">Tic Tac Toe</div>
+            </nav>
+        </div>
+        <div class="main">
+            <main>
+                <div class="board">
+                    <!-- <div class="cell">O</div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell">X</div> -->
+
+                </div>
+                <div class="controls">
+                    <div class="player">
+                       <div class="name">
+                        <label for="playerOne">Name:</label>
+                        <input type="text" id="playerOne" placeholder="Enter player name" value="">
+                       </div>
+                       <div class="marker">
+                          <label for="playerOneMarker">Marker</label>
+                          <input type="button" value="X" id="playerOneMarker">
+                       </div>
+                    </div>
+                    <div class="reset">
+                        <button id="reset">Play Again</button>
+                    </div>
+                    <div class="player">
+                       <div class="name">
+                        <label for="playerTwo">Name:</label>
+                         <input type="text" id="playerTwo" placeholder="Enter player name" value="">
+                       </div>
+                       <div class="marker">
+                          <label for="playerTwoMarker">Marker</label>
+                          <input type="button" value="O" id="playerTwoMarker    ">
+                       </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="footer">
+            <footer>&copy; Copyright 2023</footer>
+        </div>
+    </div>
 </body>
 </html>
