@@ -62,11 +62,15 @@ const gameController = (function(){
        //check if there is a win
        
        if(checkWinner()){
-        return{
+        return {
+            finish: true,
             activePlayer,
         }
        }else{
         changeActivePlayer();
+        return{
+            finish:false,
+        }
        }
     }
 
